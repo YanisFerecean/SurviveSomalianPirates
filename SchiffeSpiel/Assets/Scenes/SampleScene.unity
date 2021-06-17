@@ -249,7 +249,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f47c1cfc9a010247b28be8cd32eb044, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacle: {fileID: 6191285247925706846, guid: 40834a0ecfe3bcb479dd0cc2a2259217, type: 3}
+  ship: {fileID: 6191285247925706846, guid: 40834a0ecfe3bcb479dd0cc2a2259217, type: 3}
+  stone: {fileID: 2180252635646581603, guid: ac1710f9512864e4e8d0c2823167da9a, type: 3}
   minX: 8
   maxX: 9
   minY: -4
@@ -441,7 +442,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 91aa9d65708a42140a6cc07bd6a1276f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c342db235af855042b6e28ff47d24c65, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -479,8 +480,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1977155479}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 4, z: 0}
-  m_LocalScale: {x: 18, y: 18, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 18, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 1129773290}
   m_RootOrder: 2
@@ -518,7 +519,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7e1d481c798d4c84ba954bc2f3ef4961, type: 2}
+  - {fileID: 2100000, guid: c2bc396ee0aa84b4a840efda8fd07e6b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
