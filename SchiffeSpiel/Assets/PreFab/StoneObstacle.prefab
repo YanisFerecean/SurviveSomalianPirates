@@ -91,8 +91,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1303108358536891660}
-  - component: {fileID: 5638443965278356878}
   - component: {fileID: 213543720587730940}
+  - component: {fileID: 8712633510205669497}
   m_Layer: 0
   m_Name: StoneObstacle
   m_TagString: Untagged
@@ -115,7 +115,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &5638443965278356878
+--- !u!114 &213543720587730940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2180252635646581603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27bddb767962f6848a43218d9454f008, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &8712633510205669497
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -135,16 +147,4 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 5
---- !u!114 &213543720587730940
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2180252635646581603}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27bddb767962f6848a43218d9454f008, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Constraints: 7
