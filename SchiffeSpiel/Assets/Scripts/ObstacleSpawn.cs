@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class ObstacleSpawn : MonoBehaviour
 {
-	public GameObject obstacle;
+	public GameObject ship;
+	public GameObject stone;
+	private GameObject randomObstacle;
 	public float minX;
 	public float maxX;
 	public float minY;
@@ -15,7 +17,17 @@ public class ObstacleSpawn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		if(Time.time > spawnTime)
+		int random = Random.Range(0,2);
+		if(random == 1)
+        {
+			randomObstacle = ship;
+		}
+		else if(random == 0)
+        {
+			randomObstacle = stone;
+		}
+
+		if (Time.time > spawnTime)
 		{
 			Spawn();
 			spawnTime = Time.time + timeToSpawn;
@@ -27,7 +39,7 @@ public class ObstacleSpawn : MonoBehaviour
 		float randomX = Random.Range(minX, maxX);
 		float randomY = Random.Range(minY, maxY);
 		
-		Instantiate(obstacle, transform.position + new Vector3(randomX, randomY,0), transform.rotation);
+		Instantiate(randomObstacle, transform.position + new Vector3(randomX, randomY,0), transform.rotation);
 	}
 	
 }

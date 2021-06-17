@@ -8,7 +8,6 @@ public class GegnerBewegung : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 playerDirection;
 	private float directionX = 0;
-	private float despawningTime = 3;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,15 +19,10 @@ public class GegnerBewegung : MonoBehaviour
     {
 		directionX = directionX - 1f;
         playerDirection = new Vector2(directionX, 0).normalized;
-		if(Time.time % 5 == 0)
-		{
-			despawningTime = despawningTime - 0.5f;
-		}
     }
 
     void FixedUpdate()
     {
         rb.velocity = new Vector2(playerDirection.x * obstacleSpeed, 0);
-		Destroy(gameObject, despawningTime);
     }
 }
