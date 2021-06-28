@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Obstacle : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class Obstacle : MonoBehaviour
         if(collision.tag == "Player")
         {
             Destroy(player.gameObject);
+            SceneManager.LoadScene("GameOver");
         }
     }
 }
